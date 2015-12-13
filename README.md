@@ -1,7 +1,7 @@
 docker-rfactor2
 ===============
 
-Rfactor2 server inside a docker container. This allows you to run a rFactor 2 server in a Linux vps which is cheaper than a Windows one.
+rFactor2 server inside a docker container. This allows you to run a rFactor 2 server in a Linux vps which is cheaper than a Windows one.
 
 **Work in progress. Please test.**
 ![alt text](docker_rfactor2_diagram.png "Diagram")
@@ -9,7 +9,10 @@ Rfactor2 server inside a docker container. This allows you to run a rFactor 2 se
 ##Prerequisites
 - Linux box. Dedicated or Vps (KVM). (Recommended Vps provider: http://www.digitalocean.com).
 - 512 MB RAM (optional 512 MB vswap).
-- A linux distribution where docker can be installed. (Recommended: ubuntu 14.04) 
+- A linux distribution in remote server where docker can be installed. (Recommended: ubuntu 14.04) 
+- A vnc client (Real Vnc).
+- A ssh client (Putty).
+- Basic linux knowledge (ssh, cd, cp, etc.) and docker basics desirable.
 
 ##Components:
 - Remote server: VPS or dedicated server. It must be able to be accesed using ssh.
