@@ -99,6 +99,9 @@ RUN echo '#!/bin/bash \n cd /home/docker/.wine/drive_c/Program\ Files*86*/rFacto
 RUN chmod +x /home/docker/runrf2.sh
 RUN chown docker:docker /home/docker/runrf2.sh
 
+# Download rFactor2 Lite Build 1036
+RUN cd /home/docker && wget http://www.mediafire.com/download/xdqvbzredm3z9z5/rFactor2_LiteBuild_1036.exe
+RUN chown docker:docker /home/docker/*.exe
 
 # Start xdm and ssh services.
 CMD ["/bin/bash", "/src/startup.sh"]
